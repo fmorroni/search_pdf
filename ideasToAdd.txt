@@ -1,0 +1,14 @@
+To search_pdf:
+-+ Option to set context length. (implementado en los .py pero no en el .fish)
++ Refactor command input reading.
+  + At the very least turn it into a function and use that for both pdf_annots and pdf_text.
+  + Try to make it less shitty, without so many ifs.
++ Change color of searchTerm in the search_pdf_annots message.
++ Fix the background color in the message of search_pdf which got removed for the last ".
++ A "-" in the search string gets interpreted as a command and breaks the program!!! (done)
+- Agregar formatting a "From annotations:" y "From text:" de la parte del .fish como está hecho en search_pdf_module.
+- Agregar opción de contar matches.
+- Ver si hay forma de agregar hypervínculos de la consola al pdf para que me lleve directo a los matches. Eso sería pretty ebic.
+- Agregar opción para dar una lista y/o rango de páginas a analizar (útil para archivos muy largos tipo libros completos).
+- Se bugea si trato de usar regex patterns con corchetes tipo [a-z].
+
